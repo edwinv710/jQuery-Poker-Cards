@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" href="css/jQuery-poker-cards.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="javascript/jQuery-poker-cards.js"></script>
+
+  </head>
+
+  <body>
+    <div class="container" style="width: 100%;">
+      <div class="row" style="width: 100%; margin-bottom: 20px;">
+        <div class="poker-card"  data-value="10" data-color="black" data-suit="&spades;" style="">
+        </div>
+      </div>
+      <div class="row" style="width: 100%; margin-bottom: 20px;">
+
+        <div class="car-holder" style="width: 12%; display: inline-block; padding: 0.5%;">
+          <div class="poker-card blah" data-value="A" data-color="red" data-suit="&hearts;" style="width: 100%;">
+          </div>
+        </div>
+        <div class="car-holder" style="width: 12%; display: inline-block; padding: 0.5%;">
+          <div class="poker-card" data-value="2" data-color="red" data-suit="&hearts;" style="width: 100%;">
+          </div>
+        </div>
+        <div class="car-holder" style="width: 12%; display: inline-block; padding: 0.5%;">
+          <div class="poker-card" data-value="3" data-color="red" data-suit="&hearts;" style="width: 100%;">
+          </div>
+        </div>
+        <div class="car-holder" style="width: 12%; display: inline-block; padding: 0.5%;">
+          <div class="poker-card" data-value="4" data-color="red" data-suit="&hearts;" style="width: 100%;">
+          </div>
+        </div>
+        <div class="car-holder" style="width: 12%; display: inline-block; padding: 0.5%;">
+          <div class="poker-card" data-value="5" data-color="red" data-suit="&hearts;" style="width: 100%;">
+          </div>
+        </div>
+        <div class="car-holder" style="width: 12%; display: inline-block; padding: 0.5%;">
+          <div class="poker-card" data-value="6" data-color="red" data-suit="&hearts;" style="width: 100%;">
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row" style="width: 100%; margin-bottom: 20px;">
+        <div class="car-holder" style="width: 12%; display: inline-block; padding: 0.5%;">
+          <div class="poker-card"   data-value="7" data-color="red" data-suit="&hearts;" style="width: 100%;">
+          </div>
+        </div>
+        <div class="car-holder" style="width: 12%; display: inline-block; padding: 0.5%;">
+          <div class="poker-card"  data-value="8" data-color="red" data-suit="&hearts;" style="width: 100%;">
+          </div>
+        </div>
+        <div class="car-holder" style="width: 12%; display: inline-block; padding: 0.5%;">
+          <div class="poker-card"  data-value="9" data-color="red" data-suit="&hearts;" style="width: 100%;">
+          </div>
+        </div>
+        <div class="car-holder" style="width: 12%; display: inline-block; padding: 0.5%;">
+          <div class="poker-card" data-value="10" data-color="red" data-suit="&hearts;" style="width: 100%;">
+          </div>
+        </div>
+        <div class="car-holder" style="width: 12%; display: inline-block; padding: 0.5%;">
+          <div class="poker-card"  data-value="J" data-color="red" data-suit="&hearts;" style="width: 100%;">
+          </div>
+        </div>
+        <div class="car-holder" style="width: 12%; display: inline-block; padding: 0.5%;">
+          <div class="poker-card" data-value="Q" data-color="red" data-suit="&hearts;" style="width: 100%;">
+          </div>
+        </div>
+        <div class="car-holder" style="width: 12%; display: inline-block; padding: 0.5%;">
+          <div class="poker-card" data-value="K" data-color="red" data-suit="&hearts;" style="width: 100%;">
+          </div>
+        </div>
+      </div>
+
+      <script>
+        $(window).on("resize", function(){
+          $(".poker-card").pokerCards("resize");
+        })
+      </script>
+  </body>
+
+</html>

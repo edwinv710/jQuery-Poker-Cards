@@ -1,0 +1,184 @@
+
+.poker-card{
+  height: "140%";
+  background-color: rgb(255, 255, 255);
+  font-size: 32px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  width: 200px;
+  background-image: url(../images/red-back.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  border-radius: 14px;
+  -moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.poker-card .poker-inside{
+  padding-bottom: 140%;
+  position: relative;
+  background-color: white;
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  border-radius: 14px;
+}
+
+
+
+.poker-card .poker-inside .poker-suit.poker-suit-big{
+    font-size: 4em;
+}
+
+.poker-card .poker-inside .poker-inside-left{
+  position: absolute;
+  top: 3%;
+  left: 5%;
+  text-align: center;
+}
+
+.poker-card .poker-inside .poker-inside-right{
+  position: absolute;
+  right: 5%;
+  bottom: 3%;
+  text-align: center;
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.poker-card .poker-inside .poker-inside-left span, .poker-card .poker-inside .poker-inside-right span{
+  display: block;
+  font-size: 1em;
+  line-height: 1em;
+  text-align: center;
+}
+
+.poker-card .poker-inside .poker-inside-left span.poker-side-suit, .poker-card .poker-inside .poker-inside-right span.poker-side-suit{
+  font-size: 0.75em;
+  line-height: 0.75em;
+  height: 0.75em;
+}
+
+.poker-card .poker-inside .poker-inside-left span.poker-side-suit object, .poker-card .poker-inside .poker-inside-right span.poker-side-suit object{
+  height: 100%;
+}
+
+
+.poker-card .poker-inside .poker-inside-middle-suit{
+  font-size: 24px;
+}
+
+.poker-card .poker-inside .poker-suit{
+  position: absolute;
+    font-size: 2em;
+    height: .7em;
+    width: 1em;
+    line-height: .7em;
+    text-align: center;
+    margin-left: -.5em;
+    margin-top: -.35em;
+}
+
+.poker-card .poker-inside .poker-suit object{
+  display: inline-block;
+  height: 100%;
+  text-align: center;
+}
+
+.poker-card .poker-inside .poker-suit img{
+  height: 100%;
+}
+
+.poker-card .poker-inside .poker-value-ten{
+  font-size: 0.75em !important;
+  height: 1.3em;
+  vertical-align: middle;
+  line-height: 1.5em !important;
+  letter-spacing: -0.5px;
+}
+
+.poker-card .poker-inside .center-one{
+  left: 50%;
+  top: 50%;
+  font-size: 4em;
+}
+
+.poker-card .poker-inside .left-poker{
+  left: 30%;
+}
+
+.poker-card .poker-inside .right-poker{
+  left: 70%;
+}
+
+.poker-card .poker-inside .center-poker{
+  left: 50%
+}
+
+.poker-card .poker-inside .poker-one, .poker-three-two{
+  top: 50%;
+}
+
+.poker-card .poker-inside .poker-four-one, .poker-three-one, .poker-two-one{
+  top: 15%;
+}
+
+.poker-card .poker-inside .poker-four-four, .poker-three-three, .poker-two-two {
+  top: 85%;
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.poker-card .poker-inside .poker-four-two{
+  top: 38.3333%;
+}
+
+.poker-card .poker-inside .poker-four-three{
+  top: 61.6666%;
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.poker-card .poker-inside .poker-two-one-offset {
+    top: 32.5%;
+}
+
+.poker-card .poker-inside .poker-two-two-offset {
+  top: 67.5%;
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.poker-card .poker-inside .poker-two-one-offset-offset{
+  top: 26.6666666%;
+}
+
+.poker-card .poker-inside .poker-two-two-offset-offset{
+  top: 73.33333333%;
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.poker-card .poker-inside .poker-flip-vertically{
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
