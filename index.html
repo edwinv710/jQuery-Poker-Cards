@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Jquery-poker-cards by edwinv710</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Jquery-poker-cards</h1>
+      <h2 class="project-tagline">A jQuery plugin for handling poker cards.</h2>
+      <a href="https://github.com/edwinv710/jQuery-Poker-Cards" class="btn">View on GitHub</a>
+      <a href="https://github.com/edwinv710/jQuery-Poker-Cards/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/edwinv710/jQuery-Poker-Cards/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h2>
+<a id="jquery-poker-card" class="anchor" href="#jquery-poker-card" aria-hidden="true"><span class="octicon octicon-link"></span></a>jQuery Poker Card</h2>
+
+<p>The jQuery Poker Card plug-in allows for the creation of dynamic poker cards. Creating the cards as a plug-in allows us to leverage the power of jQuery to manipulate them for many uses. This project is at a very early stage. It is a smaller part of a bigger project and will change as the requirements of the main project changes.</p>
+
+<h3>
+<a id="how-do-i-add-a-poker-card-to-the-screen" class="anchor" href="#how-do-i-add-a-poker-card-to-the-screen" aria-hidden="true"><span class="octicon octicon-link"></span></a>How do I add a poker card to the screen?</h3>
+
+<p>Adding a poker card is simple. Simply add the following HTML block to your page.</p>
+
+<div class="highlight highlight-text-html-basic"><pre>
+&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>poker-card<span class="pl-pds">"</span></span> <span class="pl-e">data-value</span>=<span class="pl-s"><span class="pl-pds">"</span>A<span class="pl-pds">"</span></span> <span class="pl-e">data-color</span>=<span class="pl-s"><span class="pl-pds">"</span>red<span class="pl-pds">"</span></span> <span class="pl-e">data-suit</span>=<span class="pl-s"><span class="pl-pds">"</span><span class="pl-c1">&amp;hearts;</span><span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">div</span>&gt;
+</pre></div>
+
+<p><strong>Note:</strong> Please take note of the following data attributes.</p>
+
+<ul>
+<li><p>The <code>data-value</code> attribute is the value the card will display. In reality,  this value can be any character and does not have to be the normal values. (1-10, J, Q, K, A)</p></li>
+<li><p>The <code>data-color</code> attribute is the color of the fonts and symbols in the card. This attribute can be any value accepted by the "color" css style attribute.</p></li>
+<li><p>The <code>data-suit</code> attribute is the value of the symbol that will be displayed in the card. For maximum flexibility, this value can be any string. Defaults are "&amp;hearts", "&amp;diams", "&amp;spades", and "&amp;clubs".</p></li>
+</ul>
+
+<p><strong>Also:</strong> The default width for a poker card is 200px. Please make sure you set the width of the div to your desired value.</p>
+
+<h3>
+<a id="accessing-cards" class="anchor" href="#accessing-cards" aria-hidden="true"><span class="octicon octicon-link"></span></a>Accessing cards.</h3>
+
+<div class="highlight highlight-source-js"><pre>  $(<span class="pl-s"><span class="pl-pds">"</span>.poker-card<span class="pl-pds">"</span></span>).<span class="pl-en">pokerCards</span>(<span class="pl-s"><span class="pl-pds">"</span>flip<span class="pl-pds">"</span></span>);</pre></div>
+
+<p>To access cards, you can use any selector allowed by jQuery. This allows for immense power. You can separate cards by decks, hands, table, etc., and access them by using the appropriate selectors.</p>
+
+<p>Use the <code>pokerCards</code> method to access any of the methods provided by the plug-in.</p>
+
+<h3>
+<a id="scaling-cards" class="anchor" href="#scaling-cards" aria-hidden="true"><span class="octicon octicon-link"></span></a>Scaling cards.</h3>
+
+<p>Poker cards will not scale automatically. You need to call the resize method manually.</p>
+
+<div class="highlight highlight-source-js"><pre>  $(<span class="pl-s"><span class="pl-pds">"</span>.poker-card<span class="pl-pds">"</span></span>).<span class="pl-en">pokerCards</span>(<span class="pl-s"><span class="pl-pds">"</span>resize<span class="pl-pds">"</span></span>);</pre></div>
+
+<p>The resize method will be called once when the page loads. This allows fonts to scale dependent on the initial width you set.</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/edwinv710/jQuery-Poker-Cards">Jquery-poker-cards</a> is maintained by <a href="https://github.com/edwinv710">edwinv710</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
