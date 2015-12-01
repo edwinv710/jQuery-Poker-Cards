@@ -2,7 +2,7 @@
 
 The jQuery Poker Card plug-in allows for the creation of dynamic poker cards. Creating the cards as a plug-in allows us to leverage the power of jQuery to manipulate them for many uses. This project is at a very early stage. It is a smaller part of a bigger project and will change as the requirements of the main project changes.
 
-## How do I add a poker card to the screen?
+### How do I add a poker card to the screen?
 
 Adding a poker card is simple. Simply add the following HTML block to your page.
 
@@ -22,7 +22,7 @@ The data-suit attribute is the value of the symbol that will be displayed in the
 
 Also: The default width for a poker card is 200px. Please make sure you set the width of the div to your desired value.
 
-## Accessing cards.
+### Accessing cards.
 
 ```javascript
   $(".poker-card").pokerCards("flip");
@@ -33,7 +33,7 @@ To access cards, you can use any selector allowed by jQuery. This allows for imm
 Use the 'pokerCards' method to access any of the methods provided by the plug-in.
 
 
-## Scaling cards.
+### Scaling cards.
 
 Poker cards will not scale automatically. You need to call the resize method manually.
 
@@ -42,7 +42,3 @@ Poker cards will not scale automatically. You need to call the resize method man
 ```
 
 The resize method will be called once when the page loads. This allows fonts to scale dependent on the initial width you set.
-
-
-
-##
