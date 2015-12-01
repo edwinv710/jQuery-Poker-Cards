@@ -12,15 +12,15 @@ Adding a poker card is simple. Simply add the following HTML block to your page.
 
 ```
 
-Note: Please take note of the following data attributes.
+**Note:** Please take note of the following data attributes.
 
-The 'data-value' attribute is the value the card will display. In reality,  this value can be any character and does not have to be the normal values. (1-10, J, Q, K, A)
+* The `data-value` attribute is the value the card will display. In reality,  this value can be any character and does not have to be the normal values. (1-10, J, Q, K, A)
 
-The 'data-color' attribute is the color of the fonts and symbols in the card. This attribute can be any value accepted by the "color" css style attribute.
+* The `data-color` attribute is the color of the fonts and symbols in the card. This attribute can be any value accepted by the "color" css style attribute.
 
-The data-suit attribute is the value of the symbol that will be displayed in the card. For maximum flexibility, this value can be any string. Defaults are "&hearts", "&diams", "&spades", and "&clubs".
+* The `data-suit` attribute is the value of the symbol that will be displayed in the card. For maximum flexibility, this value can be any string. Defaults are "&hearts", "&diams", "&spades", and "&clubs".
 
-Also: The default width for a poker card is 200px. Please make sure you set the width of the div to your desired value.
+**Also:** The default width for a poker card is 200px. Please make sure you set the width of the div to your desired value.
 
 ### Accessing cards.
 
@@ -28,9 +28,9 @@ Also: The default width for a poker card is 200px. Please make sure you set the 
   $(".poker-card").pokerCards("flip");
 ```
 
-To access cards, you can use any selector allowed by jQuery. This allows for immense power. You can separate cards by decks, hands, table, etc., and access them by using the appropriate selector.
+To access cards, you can use any selector allowed by jQuery. This allows for immense power. You can separate cards by decks, hands, table, etc., and access them by using the appropriate selectors.
 
-Use the 'pokerCards' method to access any of the methods provided by the plug-in.
+Use the `pokerCards` method to access any of the methods provided by the plug-in.
 
 
 ### Scaling cards.
